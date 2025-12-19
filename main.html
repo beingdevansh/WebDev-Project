@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Shop Grid</title>
@@ -9,78 +10,261 @@
 
 <body>
 
-<nav class="navbar">
-    <div class="logo">Store</div>
+    <nav class="navbar">
+        <div class="logo">ExpressBees</div>
 
-    <ul class="nav-links">
-        <li><a href="#">Sign in</a></li>
-        <li><a href="#">Deals   </a></li>
-        <li><a href="#">Exclusive</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
-
-<div class="main">
-    <div class="grid">
-
-        <div class="product c1">
-            <img class="pimg" src="https://i.ibb.co/j9NQ0W0W/AIR-JORDAN-1-LOW-PRM.avif">
-            <p class="pname">Nike Sneakers</p>
-            <p class="price">₹11,495.99</p>
-            <button>Buy</button>
+        <div class="search-box">
+            <input type="text" placeholder="Search products...">
+            <button class="search-btn">🔍</button>
         </div>
 
-        <div class="product c2">
-            <img class="pimg" src="https://image.hm.com/assets/hm/bf/18/bf185e0988eb0f5172b87e4aec358295772b2df4.jpg">
-            <p class="pname">Flannel Overshirt</p>
-            <p class="price">₹2299.99</p>
-            <button>Buy</button>
-        </div>
+        <ul class="link">
+            <li><a href="#tech">Tech</a></li>
+            <li><a href="#fashion">Fashion</a></li>
+            <li><a href="#accessories">Accessories</a></li>
+            <li><a href="#toys">Toys</a></li>
+            <!-- <li><a href="#">Books</a></li>
+            <li><a href="#">Deals</a></li> -->
+        </ul>
 
-        <div class="product c3">
-            <img class="pimg" src="https://i.ibb.co/hF2qHwGP/original-imahg64xvhfhrzjz-1.jpg">
-            <p class="pname">Casio Vintage Watch</p>
-            <p class="price">₹1899.99</p>
-            <button>Buy</button>
-        </div>
+        <ul class="nav-links">
+            <li><a href="signin.html">Sign in</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-        <div class="product c4">
-            <img class="pimg" src="https://m.media-amazon.com/images/I/51KGPDttQhL._SY450_.jpg">
-            <p class="pname">Sony WH-1000XM5 Headphones</p>
-            <p class="price">₹34,899.99</p>
-            <button>Buy</button>
-        </div>
+    <section id="tech" class="category">
+        <h2 class="category-title">Tech</h2>
+        <div class="grid">
+            <div class="product c">
+                <img class="pimg" src="https://m.media-amazon.com/images/I/61wIL8jOQ3L._SX522_.jpg">
+                <p class="pname">Castor Pro IEM</p>
+                <p class="price">₹1499.99</p>
+                <button onclick="location.href='IEM.html'">Buy</button>
+            </div>
 
-        <div class="product c1">
-            <img class="pimg" src="https://i.ibb.co/7t7CpL73/airpods-pro-3-hero-select-202509-FMT-WHH.jpg">
-            <p class="pname">Apple AirPods Pro</p>
-            <p class="price">₹24,999.00</p>
-            <button>Buy</button>
-        </div>
+            <div class="product c">
+                <img class="pimg" src="https://m.media-amazon.com/images/I/51KGPDttQhL._SY450_.jpg">
+                <p class="pname">Sony WH-1000XM5 Headphones</p>
+                <p class="price">₹34,899.99</p>
+                <button onclick="location.href='sony.html'">Buy</button>
+            </div>
 
-        <div class="product c2">
-            <img class="pimg" src="https://img.tatacliq.com/images/i10/437Wx649H/MP000000016685589_437Wx649H_202303141411201.jpeg">
-            <p class="pname">Samsung Galaxy Watch</p>
-            <p class="price">₹19,999.00</p>
-            <button>Buy</button>
-        </div>
+            <div class="product c">
+                <img class="pimg" src="https://i.ibb.co/7t7CpL73/airpods-pro-3-hero-select-202509-FMT-WHH.jpg">
+                <p class="pname">Apple AirPods Pro</p>
+                <p class="price">₹24,999.00</p>
+                <button onclick="location.href='airpods.html'">Buy</button>
+            </div>
 
-        <div class="product c3">
-            <img class="pimg" src="https://files.vplak.com/500-images/logitech/M187/black/image-1.jpg">
-            <p class="pname">Logitech Wireless Mouse</p>
-            <p class="price">₹1,499.00</p>
-            <button>Buy</button>
-        </div>
+            <div class="product c">
+                <img class="pimg" src="https://i.ibb.co/rGsThNXh/230993-image1.webp">
+                <p class="pname">CMF Buds 2 Pro</p>
+                <p class="price">₹2,499.00</p>
+                <button onclick="location.href='cmf.html'">Buy</button>
+            </div>
 
-        <div class="product c4">
-            <img class="pimg" src="https://i.ibb.co/Pz6VT44B/images.jpg">
-            <p class="pname">Dell Laptop Backpack</p>
-            <p class="price">₹2,299.00</p>
-            <button>Buy</button>
-        </div>
+            <div class="product c">
+                <img class="pimg" src="https://m.media-amazon.com/images/I/71zwfwSC3EL._SL1500_.jpg">
+                <p class="pname">iPhone 17 Pro Max</p>
+                <p class="price">₹1,49,900.00</p>
+                <button onclick="location.href='17pro.html'">Buy</button>
+            </div>
 
-    </div>
-</div>
+            <div class="product c">
+                <img class="pimg" src="https://m.media-amazon.com/images/I/41CDymsLqvL._SY300_SX300_QL70_FMwebp_.jpg">
+                <p class="pname">Galaxy S24 Ultra</p>
+                <p class="price">₹84,499.00</p>
+                <button onclick="location.href='ultra.html'">Buy</button>
+            </div>
+
+            <div class="product c">
+                <img class="pimg" src="https://m.media-amazon.com/images/I/41hcjBeqDML._SY300_SX300_QL70_FMwebp_.jpg">
+                <p class="pname">Galaxy S24 FE</p>
+                <p class="price">₹41,999.00</p>
+                <button onclick="location.href=''">Buy</button>
+            </div>
+
+            <div class="product c">
+                <img class="pimg"
+                    src="https://www.mobileana.com/wp-content/uploads/2024/12/Nothing-Phone-3a-White.webp">
+                <p class="pname">Nothing Phone 3 Pro</p>
+                <p class="price">₹29,999.00</p>
+                <button onclick="location.href=''">Buy</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="fashion" class="category">
+        <h2 class="category-title">Fashion</h2>
+        <div class="grid">
+            <div class="product c">
+                <img class="pimg" src="https://i.ibb.co/j9NQ0W0W/AIR-JORDAN-1-LOW-PRM.avif">
+                <p class="pname">Nike Sneakers</p>
+                <p class="price">₹11,495.99</p>
+                <button onclick="location.href=''">Buy</button>
+            </div>
+
+            <div class="product c">
+                <img class="pimg"
+                    src="https://image.hm.com/assets/hm/bf/18/bf185e0988eb0f5172b87e4aec358295772b2df4.jpg">
+                <p class="pname">Flannel Overshirt</p>
+                <p class="price">₹2299.99</p>
+                <button onclick="location.href=''">Buy</button>
+            </div>
+
+            <div class="product c">
+                <img class="pimg"
+                    src="https://thedripsoul.com/storage/2025/07/WhatsApp-Image-2025-07-13-at-04.24.57_bd2b9c66_11zon-scaled.webp">
+                <p class="pname">Redbull Leather Jacket</p>
+                <p class="price">₹4,495.99</p>
+                <button onclick="location.href=''">Buy</button>
+            </div>
+
+            <div class="product c">
+                <img class="pimg" src="https://i.ibb.co/kgX6tJ9H/vintagerj1.webp">
+                <p class=" pname">Ferrari leather Jacket</p>
+                <p class="price">₹5299.99</p>
+                <button onclick="location.href=''">Buy</button>
+            </div>
+
+            <div class="product c">
+                <img class="pimg"
+                    src="https://i.ibb.co/6RQbrLrD/906fe36d-5c77-4e22-8737-7208f8c37f211713352231770-ADIDAS-Originals-Women-Samba-OG-Leather-Sneakers-6.webp">
+                <p class="pname">Adidas Sambas</p>
+                <p class="price">₹8,495.99</p>
+                <button onclick="location.href=''">Buy</button>
+            </div>
+
+            <div class="product c">
+                <img class="pimg" src="https://i.ibb.co/Xfrh7NLr/j8c0-ACu-Q-5c6ac5829cca48abad103f4df6db4e10.webp">
+                <p class="pname">Nike Ebernon Low</p>
+                <p class="price">₹5299.99</p>
+                <button onclick="location.href=''">Buy</button>
+            </div>
+
+            <div class="product c">
+                <img class="pimg"
+                    src="https://images.vegnonveg.com/resized/1020X1200/10981/denim-mini-skirt-blue-blue-66542482bca49.jpg?format=webp">
+                <p class="pname">Mini Skirt</p>
+                <p class="price">₹1,299.99</p>
+                <button onclick="location.href=''">Buy</button>
+            </div>
+
+            <div class="product c">
+                <img class="pimg"
+                    src="https://i.ibb.co/gZJVqZh1/20120233999-000-p.jpg">
+                <p class="pname">Tuberose Winter Edt 90ML</p>
+                <p class="price">₹6299.99</p>
+                <button onclick="location.href=''">Buy</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="accessories" class="category">
+        <h2 class="category-title">Accessories</h2>
+        <div class="grid">
+            <div class="product c">
+                <img class="pimg" src="https://i.ibb.co/n8rYWwkj/PD0452-1.jpg">
+                <p class="pname">Pendant</p>
+                <p class="price">₹3,999.99</p>
+                <button onclick="location.href=''">Buy</button>
+            </div>
+
+            <div class="product c">
+                <img class="pimg"
+                    src="https://m.media-amazon.com/images/I/41Tc-A9QzNL._SY625_.jpg">
+                <p class="pname">Ring</p>
+                <p class="price">₹2999.99</p>
+                <button onclick="location.href=''">Buy</button>
+            </div>
+
+            <div class="product c">
+                <img class="pimg" src="https://m.media-amazon.com/images/I/510ZY37kWkL._SY625_.jpg">
+                <p class="pname">Earings</p>
+                <p class="price">₹1999.99</p>
+                <button onclick="location.href=''">Buy</button>
+            </div>
+
+            <div class="product c">
+                <img class="pimg"
+                    src="https://m.media-amazon.com/images/I/71otFVhiZkL._SX522_.jpg">
+                <p class="pname">Tommy Hilfiger</p>
+                <p class="price">₹20,299.99</p>
+                <button onclick="location.href=''">Buy</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="toys" class="category">
+        <h2 class="category-title">Toys</h2>
+        <div class="grid">
+            <div class="product c">
+                <img class="pimg" src="https://m.media-amazon.com/images/I/71oMxxjch4L._SX522_.jpg">
+                <p class="pname">RC Car</p>
+                <p class="price">₹1,895.99</p>
+                <button onclick="location.href=''">Buy</button>
+            </div>
+
+            <div class="product c">
+                <img class="pimg"
+                    src="https://m.media-amazon.com/images/I/612-NnCMoQL._SY300_SX300_QL70_FMwebp_.jpg">
+                <p class="pname">Snitch Teddy</p>
+                <p class="price">₹499.99</p>
+                <button onclick="location.href=''">Buy</button>
+            </div>
+
+            <div class="product c">
+                <img class="pimg" src="https://m.media-amazon.com/images/I/61DgKS4KJxL._SY300_SX300_QL70_FMwebp_.jpg">
+                <p class="pname">Capybara Plush</p>
+                <p class="price">₹495.99</p>
+                <button onclick="location.href=''">Buy</button>
+            </div>
+
+            <div class="product c">
+                <img class="pimg"
+                    src="https://m.media-amazon.com/images/I/81A19lSMmcL._SX679_.jpg">
+                <p class="pname">Redbull RB-21 Lego</p>
+                <p class="price">₹2599.99</p>
+                <button onclick="location.href=''">Buy</button>
+            </div>
+
+            <div class="product c">
+                <img class="pimg" src="https://m.media-amazon.com/images/I/81HjGEwIrfL._AC_UL480_FMwebp_QL65_.jpg">
+                <p class="pname">Lego Bouquet</p>
+                <p class="price">₹4,495.99</p>
+                <button onclick="location.href=''">Buy</button>
+            </div>
+
+            <div class="product c">
+                <img class="pimg"
+                    src="https://m.media-amazon.com/images/I/71OESJ1eQ0L._SX522_.jpg">
+                <p class="pname">Redbull RB-21 Max Verstappen #1 Diecast</p>
+                <p class="price">₹3299.99</p>
+                <button onclick="location.href=''">Buy</button>
+            </div>
+
+            <div class="product c">
+                <img class="pimg" src="https://m.media-amazon.com/images/I/61tMrAHHq2L._AC_UL480_FMwebp_QL65_.jpg">
+                <p class="pname">Nerf gun</p>
+                <p class="price">₹695.99</p>
+                <button onclick="location.href=''">Buy</button>
+            </div>
+
+            <div class="product c">
+                <img class="pimg"
+                    src="https://m.media-amazon.com/images/I/71ubRA-SMzL._SX522_.jpg">
+                <p class="pname">Harry Potter</p>
+                <p class="price">₹799.99</p>
+                <button onclick="location.href=''">Buy</button>
+            </div>
+
+        </div>
+    </section>
 
 </body>
+
 </html>

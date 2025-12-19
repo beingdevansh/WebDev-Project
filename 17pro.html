@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 17 Pro Max</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #1e1e1e;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+        .product-main {
+            display: flex;
+            align-items: center; 
+            gap: 60px;
+        }
+        .product-images {
+            flex: 0 0 400px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: center;
+        }
+        .product-images img {
+            width: 100%;
+            max-width: 380px;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+        }
+        .product-details {
+            flex: 1;
+        }
+        .brand-tag {
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #888;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .product-title {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+        }
+        .price {
+            font-size: 26px;
+            color: #1e1e1e;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        .buy-button {
+            display: inline-block;
+            background: #000000;
+            color: white;
+            padding: 14px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 25px;
+            transition: 0.2s;
+        }
+        .buy-button:hover {
+            background: #333333;
+            transform: translateY(-2px);
+        }
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 30px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .features ul {
+            list-style: disc inside;
+            line-height: 1.8;
+            columns: 2;
+        }
+        .reviews {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+        }
+        .review {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 15px;
+        }
+        .review:last-child {
+            border-bottom: none;
+        }
+        @media (max-width: 850px) {
+            .product-main {
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+            }
+            .product-images {
+                flex: 0 0 auto;
+                width: 100%;
+            }
+            .features ul {
+                columns: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="product-main">
+        <div class="product-images">
+            <img src="https://m.media-amazon.com/images/I/71zwfwSC3EL._SL1500_.jpg" alt="iPhone 17 Pro Max">
+        </div>
+
+        <div class="product-details">
+            <span class="brand-tag">Apple</span>
+            <h1 class="product-title">iPhone 17 Pro Max</h1>
+
+            <div class="price">From ₹1,49,900*</div>
+            <a href="https://www.apple.com/in/iphone/" class="buy-button" target="_blank">Pre-order Now</a>
+
+            <div class="section-title">Product Overview</div>
+            <p>
+                Experience the pinnacle of smartphone technology with the iPhone 17 Pro Max. Featuring a thinner Titanium design, the revolutionary A19 Pro chip, and a professional-grade 48MP triple-lens system across all cameras, it's designed for those who demand the absolute best in performance and creativity.
+            </p>
+
+            <div class="section-title">Key Specifications</div>
+            <div class="features">
+                <ul>
+                    <li>A19 Pro Chip with Apple Intelligence</li>
+                    <li>6.9-inch Super Retina XDR ProMotion</li>
+                    <li>Triple 48MP Pro Camera System</li>
+                    <li>24MP Front Camera with Autofocus</li>
+                    <li>Advanced Thinner Titanium Frame</li>
+                    <li>Wi-Fi 7 and Sub-6GHz 5G Support</li>
+                    <li>Up to 35 Hours Video Playback</li>
+                    <li>USB-C with Thunderbolt 4 Speeds</li>
+                </ul>
+            </div>
+
+            <div class="section-title">Customer Reviews</div>
+            <div class="reviews">
+                <div class="review">
+                    <strong>⭐⭐⭐⭐⭐ Unmatched Performance</strong>
+                    <p>The A19 Pro chip is a beast. Gaming and video editing are smoother than ever, and the new camera system is breathtaking.</p>
+                </div>
+                <div class="review">
+                    <strong>⭐⭐⭐⭐⭐ Sleek and Powerful</strong>
+                    <p>The thinner design feels much more premium in the hand. The battery life easily lasts through two days of moderate use.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

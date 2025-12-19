@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMF by Nothing Buds Pro 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #1e1e1e;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+        .product-main {
+            display: flex;
+            align-items: center; 
+            gap: 60px;
+        }
+        .product-images {
+            flex: 0 0 400px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: center;
+        }
+        .product-images img {
+            width: 100%;
+            max-width: 380px;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+        }
+        .product-details {
+            flex: 1;
+        }
+        .brand-tag {
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #888;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .product-title {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+        }
+        .price {
+            font-size: 26px;
+            color: #d32f2f;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        .price span {
+            font-size: 16px;
+            color: #888;
+            text-decoration: line-through;
+            margin-right: 10px;
+            font-weight: normal;
+        }
+        .buy-button {
+            display: inline-block;
+            background: #ff5c35;
+            color: white;
+            padding: 14px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 25px;
+            transition: 0.2s;
+        }
+        .buy-button:hover {
+            background: #e64a26;
+            transform: translateY(-2px);
+        }
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 30px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .features ul {
+            list-style: disc inside;
+            line-height: 1.8;
+            columns: 2;
+        }
+        .reviews {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+        }
+        .review {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 15px;
+        }
+        .review:last-child {
+            border-bottom: none;
+        }
+        @media (max-width: 850px) {
+            .product-main {
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+            }
+            .product-images {
+                flex: 0 0 auto;
+                width: 100%;
+            }
+            .features ul {
+                columns: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="product-main">
+        <div class="product-images">
+            <img src="https://i.ibb.co/rGsThNXh/230993-image1.webp" alt="CMF Buds Pro 2">
+        </div>
+
+        <div class="product-details">
+            <span class="brand-tag">CMF by Nothing</span>
+            <h1 class="product-title">Buds Pro 2 with Customizable Smart Dial</h1>
+
+            <div class="price"><span>₹4,999</span> ₹2,499*</div>
+            <a href="https://cmf.tech/pages/buds-pro-2" class="buy-button" target="_blank">Buy Now on CMF.tech</a>
+
+            <div class="section-title">Product Overview</div>
+            <p>
+                CMF Buds Pro 2 are designed to elevate your listening experience with a unique industry-first customizable Smart Dial on the case. Featuring a dual-driver system and flagship-level Active Noise Cancellation, they deliver high-fidelity sound in a bold, functional design.
+            </p>
+
+            <div class="section-title">Key Specifications</div>
+            <div class="features">
+                <ul>
+                    <li>Dual-driver system (11mm + 6mm)</li>
+                    <li>50dB Hybrid Active Noise Cancellation</li>
+                    <li>Customizable Smart Dial on case</li>
+                    <li>Hi-Res Audio Wireless with LDAC</li>
+                    <li>Spatial Audio Effect</li>
+                    <li>Up to 43 hours total playback</li>
+                    <li>6 HD microphones with Clear Voice</li>
+                    <li>IP55 water and dust resistance</li>
+                </ul>
+            </div>
+
+            <div class="section-title">Customer Reviews</div>
+            <div class="reviews">
+                <div class="review">
+                    <strong>⭐⭐⭐⭐⭐ Love the Smart Dial</strong>
+                    <p>The rotating dial on the case is a game changer for volume control and skipping tracks. Best feature on any buds I've owned.</p>
+                </div>
+                <div class="review">
+                    <strong>⭐⭐⭐⭐⭐ Amazing Bass</strong>
+                    <p>The dual drivers really make a difference. The bass is deep but doesn't drown out the vocals. Excellent value for money.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
