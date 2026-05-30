@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung Galaxy S24 Ultra</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #1e1e1e;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+        .product-main {
+            display: flex;
+            align-items: center; 
+            gap: 60px;
+        }
+        .product-images {
+            flex: 0 0 400px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: center;
+        }
+        .product-images img {
+            width: 100%;
+            max-width: 380px;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+        }
+        .product-details {
+            flex: 1;
+        }
+        .brand-tag {
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #888;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .product-title {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+        }
+        .price {
+            font-size: 26px;
+            color: #1e1e1e;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        .price span {
+            font-size: 16px;
+            color: #888;
+            text-decoration: line-through;
+            margin-right: 10px;
+            font-weight: normal;
+        }
+        .buy-button {
+            display: inline-block;
+            background: #000000;
+            color: white;
+            padding: 14px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 25px;
+            transition: 0.2s;
+        }
+        .buy-button:hover {
+            background: #333333;
+            transform: translateY(-2px);
+        }
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 30px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .features ul {
+            list-style: disc inside;
+            line-height: 1.8;
+            columns: 2;
+        }
+        .reviews {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+        }
+        .review {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 15px;
+        }
+        .review:last-child {
+            border-bottom: none;
+        }
+        @media (max-width: 850px) {
+            .product-main {
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+            }
+            .product-images {
+                flex: 0 0 auto;
+                width: 100%;
+            }
+            .features ul {
+                columns: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="product-main">
+        <div class="product-images">
+            <img src="https://m.media-amazon.com/images/I/41CDymsLqvL._SY300_SX300_QL70_FMwebp_.jpg" alt="Samsung Galaxy S24 Ultra">
+        </div>
+
+        <div class="product-details">
+            <span class="brand-tag">Samsung</span>
+            <h1 class="product-title">Galaxy S24 Ultra</h1>
+
+            <div class="price"><span>₹1,34,999</span> ₹84,499*</div>
+            <a href="https://www.samsung.com/in/smartphones/galaxy-s24-ultra/" class="buy-button" target="_blank">Buy Now on Samsung Store</a>
+
+            <div class="section-title">Product Overview</div>
+            <p>
+                The Galaxy S24 Ultra represents the ultimate in smartphone innovation with Galaxy AI. Encased in a durable Titanium frame and featuring the built-in S Pen, it delivers a revolutionary 200MP camera system and the brightest mobile display for an unparalleled user experience.
+            </p>
+
+            <div class="section-title">Key Specifications</div>
+            <div class="features">
+                <ul>
+                    <li>Snapdragon 8 Gen 3 for Galaxy</li>
+                    <li>6.8-inch QHD+ Dynamic AMOLED 2X</li>
+                    <li>200MP Main + 50MP Periscope Telephoto</li>
+                    <li>Titanium Exterior Frame</li>
+                    <li>Built-in S Pen Stylus</li>
+                    <li>Circle to Search with Galaxy AI</li>
+                    <li>5,000mAh Battery with 45W Charging</li>
+                    <li>Corning Gorilla Armor Glass</li>
+                </ul>
+            </div>
+
+            <div class="section-title">Customer Reviews</div>
+            <div class="reviews">
+                <div class="review">
+                    <strong>⭐⭐⭐⭐⭐ The AI features are magic</strong>
+                    <p>Circle to Search and Live Translate have changed how I use my phone daily. The camera zoom is also incredibly stable and clear.</p>
+                </div>
+                <div class="review">
+                    <strong>⭐⭐⭐⭐⭐ Best Display on a Phone</strong>
+                    <p>The anti-reflective glass is a game changer. I can see everything perfectly even in direct sunlight. S Pen is as responsive as ever.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .cart-container {
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-title {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 30px;
+            color: #1E1E2F;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 15px;
+            background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+        }
+
+        .cart-item h3 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        .cart-item p {
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .remove-btn {
+            background: crimson;
+            color: white;
+        }
+
+        .remove-btn:hover {
+            background: darkred;
+            color: white;
+        }
+
+        .total-box {
+            margin-top: 30px;
+            text-align: right;
+        }
+
+        .total-box h2 {
+            color: #1E1E2F;
+        }
+
+        .empty-cart {
+            text-align: center;
+            font-size: 25px;
+            color: gray;
+            margin-top: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="cart-container">
+
+        <h1 class="cart-title">🛒 My Cart</h1>
+
+        <div id="cart-items"></div>
+
+        <div class="total-box">
+            <h2 id="total-price">Total: ₹0</h2>
+
+            <button onclick="checkout()">
+                Checkout
+            </button>
+        </div>
+
+    </div>
+
+    <script>
+
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        const cartItemsContainer =
+            document.getElementById("cart-items");
+
+        const totalPrice =
+            document.getElementById("total-price");
+
+        function renderCart() {
+
+            cartItemsContainer.innerHTML = "";
+
+            let total = 0;
+
+            if (cart.length === 0) {
+
+                cartItemsContainer.innerHTML = `
+                    <p class="empty-cart">
+                        Your cart is empty
+                    </p>
+                `;
+
+                totalPrice.innerText = "Total: ₹0";
+
+                return;
+            }
+
+            cart.forEach((item, index) => {
+
+                total += item.price;
+
+                const div = document.createElement("div");
+
+                div.classList.add("cart-item");
+
+                div.innerHTML = `
+                    <div>
+                        <h3>${item.name}</h3>
+                        <p>₹${item.price}</p>
+                    </div>
+
+                    <button class="remove-btn"
+                        onclick="removeItem(${index})">
+                        Remove
+                    </button>
+                `;
+
+                cartItemsContainer.appendChild(div);
+
+            });
+
+            totalPrice.innerText = `Total: ₹${total}`;
+
+        }
+
+        function removeItem(index) {
+
+            cart.splice(index, 1);
+
+            localStorage.setItem(
+                "cart",
+                JSON.stringify(cart)
+            );
+
+            renderCart();
+
+        }
+
+        function checkout() {
+
+            if (cart.length === 0) {
+
+                alert("Your cart is empty");
+
+                return;
+            }
+
+            alert("Order placed successfully!");
+
+            localStorage.removeItem("cart");
+
+            cart = [];
+
+            renderCart();
+
+        }
+
+        renderCart();
+
+    </script>
+
+</body>
+
+</html>
